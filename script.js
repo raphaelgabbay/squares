@@ -26,7 +26,7 @@ function setup() {
     // fill(255);
     fill(0,0);
     angleMode(DEGREES);
-    rectMode('center')
+    rectMode('center');
 
     let pointerX = windowWidth / 2;
     let pointerY = windowHeight / 2;
@@ -34,7 +34,7 @@ function setup() {
     //Initialize squaresArray
     for(let i = 0; i * 100 <= width + 100; i++) {
         for(let j = 0; j * 100 <= height + 100; j++) {
-            if (!squaresArray[i]) squaresArray[i] = []
+            if (!squaresArray[i]) squaresArray[i] = [];
             squaresArray[i][j] = new MySquare(0, 0, i * 120 , j * 120);
         }    
     }    
